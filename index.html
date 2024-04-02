@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT- Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="animate.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="x n container-fluid">
+            <div class="sa">
+                <img class="animate__animated animate__backInDown headimg1" src="smit.png" alt="">
+            </div>
+          <form class="d-flex" role="search">
+            <img class="animate__animated animate__backInDown headimg" src="shah.jpg" alt="">
+            <select class="animate__animated animate__backInDown form-select" aria-label="Default select example" style="color: rgb(10, 111, 226); font-weight:600; border: 2px solid white;">
+                <option selected>Shariq</option>
+                <option value="1"><i class="fa-solid fa-square-poll-vertical">Result</i></option>
+                <option value="2">Logout</option>
+            </select></form>
+        </div>
+    </nav>
+    <div class="btn1"><center><button class="logoutbtn" onclick="logout()">Logout</button></center></div>
+
+                                <!-- login  -->
+<br>
+<center><div id="loginForm" class="animate__animated animate__zoomIn">
+    <h2 id="log">Login</h2><br><br>
+    <form id="login">
+      <div>
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="username" required placeholder="shariq">
+      </div><br>
+      <div>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" required placeholder="shariq15">
+      </div><br><br>
+      <button class="logbtn" type="submit">Login</button>
+    </form>
+  </div></center>
+  <div id="welcome" style="display: none;">
+    <!-- <h2>Welcome, <span id="welcomeUsername"></span>!</h2>
+    <p>This is the welcome page.</p> -->
+
+                                    <!-- Cards -->
+    <div class="row p-5" id="main">
+
+    </div>
+                                  <!-- Test Section -->
+    <div id="quizWindow"><br><br>
+
+      <ul>
+          <li> <h4><b id="question">Question will be here</b></h4></li>
+           <input class="optionsCheck" name="quizOption" id="option1" type="radio"> <label id="val1"
+                  for="option1">Option 1</label><br>
+          <input class="optionsCheck" name="quizOption" id="option2" type="radio"> <label id="val2"
+                  for="option2">Option 2</label><br>
+          <input class="optionsCheck" name="quizOption" id="option3" type="radio"> <label id="val3"
+                  for="option3">Option 3</label><br>
+         <input class="optionsCheck" name="quizOption" id="option4" type="radio"> <label id="val4"
+                  for="option4">Option 4</label><br>
+      </ul>
+      <div id="btnn"><button id="nbtn" onclick="next()"> Next </button></div>
+  </div>
+                                  <!-- Result Secction -->
+  <center><div class="resultSec" id="result"><br>
+      <br>
+      <h2 id="announce"></h2><br>
+      <table class="resultborder" border="2px solid rgb(8, 84, 224)">
+          <tr>
+              <th><h3>Total Questions: </h3></th>
+              <b><td id="totalQueCount"></td></b>
+          </tr>
+          <tr>
+              <th><h3>Correct Questions: </h3></th>
+              <b><td id="correctQueCount"></td></b>
+          </tr>
+      </table>
+  </div>
+</center>
+  </div>
+            <script src="app.js"></script>
+</body>
+</html>

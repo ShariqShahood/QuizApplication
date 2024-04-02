@@ -1,0 +1,318 @@
+/* login */
+#loginForm{
+    margin-top: 5%;
+    box-shadow: 5px 5px 30px 20px rgb(50, 117, 241);
+    padding: 30px;
+    border:2px solid rgb(11, 72, 204);
+    width: 50%;
+    border-radius: 15px;
+}
+#username{
+    border-radius: 10px;
+    border: 2px solid rgb(50, 117, 241);
+    width: 70%;
+}
+#password{
+    border-radius: 10px;
+    border: 2px solid rgb(50, 117, 241);
+    width: 70%;
+}
+#username:hover{
+    border: 2px solid red;
+}
+#password:hover{
+    border: 2px solid red;
+}
+#log{
+    font-size: 50px;
+
+}
+.logbtn{
+    border-radius: 10px;
+    border: 2px solid rgb(50, 117, 241);
+    padding: 5px;
+    /* width: 15%; */
+}
+.headimg{
+    margin-left: 70px;
+}
+.logbtn:hover{
+    background-color:rgb(11, 72, 204) ;
+}.btn1{
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+}
+.logoutbtn{
+    border-radius: 10px;
+    border: 2px solid rgb(50, 117, 241);
+    padding: 5px;
+    /* width: 10%; */
+    position: absolute;
+    margin-top: -70px;
+    /* margin-left: -90px; */
+}
+.logoutbtn:hover{
+    background-color:rgb(11, 72, 204) ;
+}
+*{
+    font-family: Malgun Gothic;
+}
+.navbar{
+    display: flex;
+    flex-shrink: unset;
+}
+.sa{
+    width: 120px;
+}
+.headimg1{
+    width: 100%;
+    padding-left: 20px;
+}
+.headimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+#names{
+    color: rgb(11, 72, 204)!important;
+    font-weight: bolder;
+}
+.n{
+    background-color: white!important;
+    height: 90px;
+    box-shadow: 5px 5px 25px rgb(190, 187, 187);
+
+}
+.x{
+    padding-left: 70px!important;
+    padding-right: 10px!important;
+}
+.top{
+    padding-left: 120px!important;
+    padding-right: 120px!important;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.txt{
+    padding: 30px 90px!important;
+    /* padding-left: 80px!important; */
+}
+.heading1{
+    font-size: 250%;
+    font-weight: 100;
+    color:rgb(11, 72, 204)!important ;
+}
+.para{
+    font-weight: 600;
+    color: rgb(83, 81, 81);
+}
+#line{
+    color: grey;
+    width: 93%!important;
+    margin-top: -10px;
+}
+#card-heading{
+    font-weight: 600;
+}
+#card-text{
+    font-weight: 600;
+    color:rgb(94, 92, 92);
+}
+#main-div{
+    padding-left: 50px;
+    /* width: 87%; */
+    /* background-color: rebeccapurple; */
+}
+.card-body{
+    padding:40px!important;
+    border-radius: 5px;
+    border: 2px solid rgb(224, 222, 222);
+    width: 90%;
+    /* box-shadow: inset -3px -3px 7px white,
+    3px 3px 10px rgb(180, 177, 177); */
+}
+#butn{
+    width: 100%;
+    color: rgb(8, 84, 224);
+    font-weight: 500;
+    border: 1px solid rgb(8, 84, 224);
+    padding: 5px;
+    border-radius: 2px;
+  
+}
+#butn:active{
+    background-color: rgb(8, 84, 224);
+    color: white;
+}
+#pybtn:hover{
+display: none;
+}
+#subj{
+    font-size: 20px;
+}
+#d1{
+    border: 1px solid rgba(218, 211, 211, 0.705);
+}
+#d11{
+    border: 1px solid rgba(218, 211, 211, 0.705);
+    padding: 20px;   
+}
+.summ{
+    border: 1px solid rgb(224, 222, 222);
+    background-color: rgba(233, 232, 232, 0.705);
+    padding: 20px;
+}
+.summ:hover{
+    background-color: rgb(207, 197, 197);
+
+}
+.under{
+    text-align: left;
+    width: 98%;
+    border: 1px solid rgb(224, 222, 222);
+    background-color: rgba(233, 232, 232, 0.705);
+    padding: 20px;
+}
+.under:hover{
+    background-color: rgb(207, 197, 197);
+
+}
+#nbtn{
+    border-radius: 10px;
+    border: 2px solid rgb(8, 84, 224);
+    width: 100px;
+}
+#nbtn:hover{
+    background-color:  rgb(8, 84, 224);
+}
+#btnn{
+    padding: 15px;
+    padding-left: 30px;
+}
+.resultSec{
+    padding: 25px;
+}
+.resultborder{
+    /* box-shadow: -3px -3px 7px #f10505,
+     3px 3px 5px rgba(0, 0, 0, 0.374),
+      -3px -3px 7px #f10505,
+     3px 3px 5px rgba(0, 0, 0, 0.374); */
+     box-shadow: 5px 5px 30px 20px rgb(8, 84, 224);
+}
+
+/* animations */
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+.card-body:hover{
+    border : 2px solid  rgb(8, 84, 224);
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
+
+
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate(-3deg);
+        transform: scale3d(.9, .9, .9) rotate(-3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate(-3deg);
+        transform: scale3d(.9, .9, .9) rotate(-3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+.heading1:hover{
+    -webkit-animation-name: tada;
+    animation-name: tada
+}
